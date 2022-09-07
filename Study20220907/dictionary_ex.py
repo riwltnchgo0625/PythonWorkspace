@@ -49,7 +49,7 @@ for days in dict4.values():
     print(days)
 
 print('------------------------')
-# key,value 동시 출력
+# key,value 동시 출력 =>items()
 for key, value in dict4.items():
     print('key=', key)
     print('value=', value)
