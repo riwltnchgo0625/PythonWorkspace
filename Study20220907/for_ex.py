@@ -28,3 +28,4 @@ for i, animal in enumerate(list3):  # 인덱스와 값을 동시에 뽑을 수 �
 print('-------------------------------')
 for i, animal in enumerate(list3):
     print('list3 리스트의 {}번째 원소는 {}입니다'.format(i + 1, animal))
+
