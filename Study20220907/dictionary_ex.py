@@ -53,3 +53,21 @@ print('------------------------')
 for key, value in dict4.items():
     print('key=', key)
     print('value=', value)
+
+print('------------------------')
+days_in_month = {'1월': 31, '2월': 28, '3월': 31, '4월': 30, '5월': 31, }
+for key, value in days_in_month.items():
+    print("{}은 {}일이 있습니다.".format(key, value))
+
+print('------------------------')
+if '1월' in days_in_month.keys():
+    print('1월이 dict에 있습니다.')
+
+if 28 in days_in_month.values():
+    print('28일이 dict에 있습니다.')
+
+days_in_month.clear()  # dict 내용 모두 삭제
+print(days_in_month)
+
+list2.clear()  # 리스트 내용 모두 삭제
+print(list2)
