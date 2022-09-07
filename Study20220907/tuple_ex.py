@@ -18,5 +18,27 @@ print(list1)
 
 print('------------------------------')
 # tuple은 한번 만들면 수정 불가
-tuple1[1] = 100
-print(tuple1)
+# tuple1[1] = 100
+# print(tuple1)
+
+print('------------------------------')
+
+a, b = 1, 2
+print(a)
+print(b)
+
+c = (3, 4)  # 튜플 c 선언
+
+d, e = c  # 언패킹
+print(d)
+print(e)
+
+print('------------------------------')
+
+# 패킹
+f = 10
+g = 20
+h = f, g
+print(h)
+
+print(type(h))
