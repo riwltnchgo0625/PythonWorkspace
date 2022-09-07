@@ -1,7 +1,7 @@
 tuple1 = (1, 2, 3, 4, 5)  # 튜플 선언1
 tuple2 = 1, 2, 3, 4, 5  # 튜플 선언2
 
-print(type(tuple2))  # type확인
+print(type(tuple2))  # type 확인
 print('------------------------------')
 
 for tuple in tuple1:
@@ -41,4 +41,16 @@ g = 20
 h = f, g
 print(h)
 
-print(type(h))
+print('------------------------------')
+
+
+def sum_and_mul(a, b):
+    sum = a + b
+    mul = a * b
+    return sum, mul  # 두개 이상의 값을 반환할 때는 튜플 값으로 반환됨
+
+
+# 튜플은 리스트와 같지만 값을 바꿀 수 없음
+
+result = sum_and_mul(10, 20)
+print(result)
