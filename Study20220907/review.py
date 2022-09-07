@@ -11,7 +11,17 @@
 #
 # print(score+100)
 
+#list
 list1 = [100, 90, 40, 60, 70]
+list1.append(200)  # 리스트 끝에 숫자 추가하기
+print(list1)
 
-list2 = list1[3]
+list2 = [10, 52, 58, 88]
 print(list2)
+
+#in연산
+ownership = 100 in list1
+print(ownership)
+
+if 100 in list1:
+    print("100이 list1에 있습니다.")
