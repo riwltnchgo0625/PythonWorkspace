@@ -57,3 +57,44 @@ print(op.plus())
 print(op.minus())
 print(op.multi())
 print(op.div())
+
+print('---------------------')
+
+
+# 자식 클래스 만들기 부모는 Op클래스
+class SubCalculator(Op):
+    def power(self):
+        return self.num1 ** self.num2
+
+
+sub1 = Op(200, 100)
+print(op.multi())
+
+print('---------------------------')
+
+
+class Car:
+
+    def run(self):
+        print('차가 달립니다.')
+
+
+class Truck(Car):
+
+    def load(self):
+        print('짐을 실었습니다')
+
+    def run(self):
+        print('트럭이 달립니다')
+
+
+class SportCar(Car):
+    pass
+
+
+truck1 = Truck()
+truck1.run()
+truck1.load()
+
+sportCar1 = SportCar()
+sportCar1.run()
