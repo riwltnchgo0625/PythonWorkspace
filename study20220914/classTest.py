@@ -52,6 +52,7 @@ class Op:
 
 
 op = Op(20, 10)
+
 print(op.plus())
 print(op.minus())
 print(op.multi())
