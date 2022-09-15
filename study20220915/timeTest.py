@@ -24,4 +24,17 @@ print(result_time.days)
 print(result_time.seconds)
 
 print('---------------------------------------------')
-print('우리가 공부를 시작한지 {}일 {}시간 지났습니다!'.format(result_time.days, result_time.seconds//60//60))
+print('우리가 공부를 시작한지 {}일 {}시간 지났습니다!'.format(result_time.days, result_time.seconds // 60 // 60))
+
+print('---------------------------------------------')
+
+
+def days_until_christmas():
+    christmas_2022 = datetime.datetime(2022, 12, 25)
+    days = (christmas_2022 - datetime.datetime.now()).days
+    return days
+
+
+print('{}일'.format(days_until_christmas()))
+
+print('---------------------------------------------')
